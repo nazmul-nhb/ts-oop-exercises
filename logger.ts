@@ -1,7 +1,5 @@
 class Logger {
-	fileName: string;
-
-	constructor(fileName: string) {
+	constructor(public fileName: string) {
 		this.fileName = fileName;
 	}
 
