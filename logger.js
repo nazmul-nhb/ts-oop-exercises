@@ -2,7 +2,6 @@
 class Logger {
     constructor(fileName) {
         this.fileName = fileName;
-        this.fileName = fileName;
     }
     writeMessage() {
         return `${this.fileName} is Loaded!`;
