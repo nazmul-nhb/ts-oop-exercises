@@ -22,3 +22,18 @@ class Entity<T> {
 const entity = new Entity(1234);
 
 console.log(entity.id);
+
+// Given the following interface, what does keyof User return?
+
+interface User {
+	userId: number;
+	username: string;
+}
+
+function printKey(key: keyof User) {
+    return key
+}
+
+const key = printKey("userId");
+
+console.log(key);

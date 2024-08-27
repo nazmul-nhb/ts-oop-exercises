@@ -18,3 +18,8 @@ class Entity {
 }
 const entity = new Entity(1234);
 console.log(entity.id);
+function printKey(key) {
+    return key;
+}
+const key = printKey("userId");
+console.log(key);
