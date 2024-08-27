@@ -9,3 +9,9 @@ class Logger {
 }
 const money = new Logger("Salman Fucking Rahman");
 console.log(money.writeMessage());
+class Logger2 {
+    constructor(logFile) {
+        this.logFile = logFile;
+    }
+    log(message) { }
+}
