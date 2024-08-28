@@ -21,10 +21,16 @@ function Component(options: ComponentOptions) {
 	};
 }
 
+interface ComponentInstance {
+	options: ComponentOptions;
+	uniqueID: number;
+	insertInDOM: () => void;
+}
+
 @Component({ selector: "#myProfile" })
 class ProfileComponent {}
 
-const profile = new ProfileComponent();
-(profile as any).insertInDOM();
-console.log((profile as any).options);
-console.log((profile as any).uniqueID);
+const profile = new ProfileComponent() as ComponentInstance;
+profile.insertInDOM();
+console.log(profile.options);
+console.log(profile.uniqueID);
